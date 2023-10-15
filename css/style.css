@@ -1,0 +1,801 @@
+/* Reset Css */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+em,
+img,
+strong,
+b,
+u,
+i,
+center,
+ol,
+ul,
+li,
+form,
+label,
+legend,
+article,
+aside,
+footer,
+header,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #FFFFFF;
+    max-width: 1400px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    width: 100px;
+    border-radius: 50%;
+
+}
+
+nav {
+    display: flex;
+    font-size: 24px;
+}
+
+#nav_competences {
+    text-decoration: none;
+    color: red;
+    padding-top: 44px;
+}
+
+#nav_competences:hover,
+#nav_projets:hover,
+#nav_contact:hover {
+    border-top: #0065FC 2px solid;
+    color: #0065FC;
+}
+
+#nav_projets {
+    margin-left: 70px;
+    text-decoration: none;
+    color: red;
+    padding-top: 44px;
+}
+
+#nav_contact {
+    color: red;
+    text-decoration: none;
+    margin-left: 70px;
+    padding-top: 44px;
+}
+
+
+/* Main */
+/* Partie haute */
+
+main {
+    margin-top: 60px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+#banner {
+    display: flex;
+}
+
+#banner_text {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("../images/banniere/Banniere.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #F2F2F2;
+    border-radius: 25px;
+    margin-top: 100px;
+}
+
+#banner_text h1 {
+    font-size: 50px;
+}
+
+#banner_text h2 {
+    font-size: 30px;
+}
+
+
+/* Texte Portfolio */
+
+
+#texte_portfolio h3 {
+    display: flex;
+    margin-top: 150px;
+    padding-bottom: 50px;
+    font-size: 36px;
+}
+
+/* Les compétences */
+
+#container_les_competences_et_outils {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#container_fond_competences {
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    width: 67%;
+}
+
+#container_fond_competences h2 {
+    font-size: 30px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+#container_articles_competences {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    padding-top: 25px;
+    padding-left: 40px;
+}
+
+.article_competence {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    width: 30%;
+    height: 199px;
+    margin-bottom: 30px;
+    padding-bottom: 11px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    border: 5px solid #FFFFFF;
+    object-fit: cover;
+}
+
+.article_competence a {
+    text-decoration: none;
+    color: black;
+}
+
+.article_competence img {
+    width: 100%;
+    height: 65%;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.description_article_competence {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 11px;
+}
+
+.description_article_competence h3 {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.description_article_competence p {
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+.star_article {
+    display: flex;
+    flex-direction: row;
+    color: #0065fc;
+    font-size: 16px;
+    padding-top: 9px;
+}
+
+.star_grise {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.fa-star-grise {
+    color: gray;
+}
+
+.fa-star-grise:before {
+    content: "\f005";
+}
+
+.star_grise i {
+    color: #F2F2F2;
+    font-size: 16px;
+}
+
+
+/* Section Outils */
+
+#container_fond_outils {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    height: 625px;
+}
+
+#container_titre_outils {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 41px;
+}
+
+#container_titre_outils h2 {
+    font-size: 30px;
+}
+
+#container_articles_outils {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.article_outil {
+    display: flex;
+    width: 80%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.article_outil a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+}
+
+.article_outil img {
+    box-sizing: border-box;
+    width: 40%;
+    height: 144px;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.texte_article_outil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+}
+
+.descriptif_article_outil h3 {
+    font-size: 18px;
+}
+
+.descriptif_article_outil p {
+    font-size: 13px;
+    padding-top: 7px;
+}
+
+.star_article_outil {
+    color: #0065FC;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+}
+
+
+/* Section Projets */
+
+#projets {
+    margin-top: 100px;
+}
+
+#projets h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+#container_activites_projets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.activite_projet {
+    width: 22%;
+    height: 445px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.activite_projet a {
+    text-decoration: none;
+    color: black;
+}
+
+.activite_projet img {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 88%;
+    object-fit: cover;
+}
+
+.activite_projet img:hover+span {
+    visibility: visible;
+}
+
+.activite_projet span {
+    visibility: hidden;
+}
+
+.activite_projet h3 {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.titre_projet {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 12%;
+}
+
+.titre_projet h3:hover {
+    color: #0065FC;
+}
+
+.modale_globale a {
+    font-size: 16px;
+}
+
+/* Footer */
+
+#container_fond_footer {
+    background-color: #F2F2F2;
+    margin-top: 61px;
+    height: 225px;
+}
+
+#container_regroupement_footer {
+    display: flex;
+    padding-top: 45px;
+}
+
+.container_footer {
+    width: 33%;
+    text-align: center;
+}
+
+.container_footer>p {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.container_footer ul {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    padding-top: 15px;
+}
+
+.container_footer li {
+    padding-top: 20px;
+}
+
+.container_footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.container_footer img {
+    border-radius: 20%;
+}
+
+/* Modales*/
+
+#modaledescription {
+    padding-right: 10px;
+}
+
+.modal {
+    visibility: hidden;
+    position: absolute;
+    top: 1000px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 25px;
+    border: 3px solid #cccccc;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#modalea {
+    padding-left: 400px;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+}
+
+#modaleh4 {
+    font-size: 30px;
+}
+
+#modalep {
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+#modalecompetences {
+    text-decoration: underline;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+#modaleul {
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+#modaleul li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+/* Media Queries */
+
+/* Media Queries Tablette */
+
+@media screen and (max-width:990px) {
+
+    body {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+    /* Section */
+
+    #container_les_competences_et_outils {
+        flex-direction: column;
+    }
+
+    /* Les compétences */
+
+    #container_fond_competences {
+        width: 100%;
+        height: 626px;
+    }
+
+    /* Les outils */
+
+    #container_fond_outils {
+        width: 100%;
+        height: 278px;
+        margin-top: 53px;
+    }
+
+    #container_titre_outils {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #container_articles_outils {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 144px;
+        padding-top: 26px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .article_outil {
+        width: 32%;
+    }
+
+    .texte_article_outil {
+        padding-left: 10px;
+
+    }
+
+    .descriptif_article_outil h3 {
+        font-size: 14px;
+    }
+
+    .descriptif_article_outil p {
+        font-size: 13px;
+    }
+
+
+    /* Les projets */
+
+    #projets {
+        height: 387px;
+    }
+
+    #projets h2 {
+        padding-bottom: 0px;
+    }
+
+    .activite_projet {
+        height: 267px;
+        margin-top: 25px;
+    }
+
+    .activite_projet img {
+        height: 80%;
+    }
+
+    .activite_projet h3 {
+        font-size: 14px;
+    }
+
+    .titre_projet {
+        height: 20%;
+    }
+
+    #modaledescription {
+        font-size: 14px;
+        padding-left: 5px;
+    }
+
+}
+
+/* Media Queries Mobile */
+
+@media screen and (max-width:767px) {
+
+    body {
+        padding-left: 34px;
+        padding-right: 0px;
+    }
+
+    /* Header */
+
+    .article_competence img {
+        width: 25%;
+        padding-left: 35%;
+    }
+
+    .article_outil img {
+        width: 25%;
+    }
+
+    .texte_article_outil {
+        padding-left: 75px;
+    }
+
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    header img {
+        padding-top: 21px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #nav_competences {
+        padding-left: 20px;
+        padding-bottom: 23px;
+        width: 50%;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    #nav_projets {
+        width: 50%;
+        padding-bottom: 23px;
+        margin-left: 0;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    #nav_contact {
+        width: 50%;
+        padding-bottom: 23px;
+        margin-left: 0;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    #nav_competences:hover,
+    #nav_projets:hover,
+    #nav_contact:hover {
+        color: #0065FC;
+        border-top: none;
+    }
+
+    /* Main */
+
+    main {
+        margin-top: 31px;
+    }
+
+    #container_les_competences_et_outils {
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+
+    /* Les outils */
+
+    #container_fond_outils {
+        height: 580px;
+        border-radius: 0;
+    }
+
+    #container_titre_outils {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 28px;
+    }
+
+    #container_articles_outils {
+        flex-direction: column;
+        height: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .article_outil {
+        width: 100%;
+    }
+
+    .article_outil a {
+        justify-content: space-between;
+    }
+
+    .descriptif_article_outil h3 {
+        font-size: 16px;
+    }
+
+    .descriptif_article_outil p {
+        font-size: 14px;
+    }
+
+    /* Les compétences */
+
+    #container_fond_competences {
+        height: auto;
+        background-color: #FFFFFF;
+        margin-top: 100px;
+    }
+
+    #container_fond_competences h2 {
+        padding-left: 20px;
+    }
+
+    #container_articles_competences {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .article_competence {
+        width: 100%;
+    }
+
+    .article_comptence img {
+        width: 100%;
+    }
+
+
+    /* Les projets */
+
+    #projets {
+        height: 886px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #titre_activites_projets {
+        display: flex;
+        flex-wrap: wrap;
+        width: 210px;
+        margin-bottom: 0;
+    }
+
+    #container_activites_projets {
+        flex-direction: column;
+        padding-top: 0;
+        height: 882px;
+        width: 100%;
+    }
+
+    .activite_projet {
+        width: 100%;
+        height: 190px;
+        margin-top: 25px;
+    }
+
+    .activite_projet img {
+        height: 134px;
+    }
+
+    .titre_projet {
+        height: 25%;
+    }
+
+    .activite_projet h3 {
+        font-size: 18px;
+    }
+
+    #modaledescription {
+        font-size: 18px;
+    }
+
+    /* Footer */
+
+    footer {
+        padding-top: 80px
+    }
+
+    #container_fond_footer {
+        height: auto;
+    }
+
+    #container_regroupement_footer {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+        padding-left: 20px;
+    }
+
+    .container_footer {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+}

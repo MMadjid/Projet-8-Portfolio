@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Site Portfolio de Madjid MEHAL - Je présente l'ensemble des mes compétences acquises tout au long de mon parcours de formation OpenClassrooms">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b9e0ef79a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="competences.js" defer></script>
+    <script src="outils.js" defer></script>
+    <script src="projets.js" defer></script>
+    <title>Portfolio - Madjid MEHAL</title>
+    <script>
+        function toggleModal(modalId) {
+            const el = document.getElementById(modalId);
+            el.style.visibility = el.style.visibility === "visible" ? "hidden" : "visible";
+        }
+    </script>
+</head>
+
+
+<body>
+
+    <header>
+        <img src="/Users/madjidmehal/Documents/OC-Projet8-Portfolio-main/images/logo/Profil.webp" alt="ma photo">
+        <nav>
+            <a href="#competences" title="Lien vers les compétences" id="nav_competences">Compétences</a>
+            <a href="#projets" title="Lien vers les projets" id="nav_projets">Projets</a>
+            <a href="#contact" title="Lien vers les contacts" id="nav_contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="banner">
+            <div id="banner_text">
+                <h1>Madjid MEHAL</h1>
+                <h2>Développeur Web</h2>
+            </div>
+        </div>
+
+        <div id="texte_portfolio">
+            <h3>Bienvenue sur mon Portolio</h3>
+        </div>
+
+
+        <!-- Les compétences-->
+
+        <section id="container_les_competences_et_outils">
+
+            <div id="container_fond_competences">
+
+                <h2 id="competences">Mes Compétences</h2>
+
+                <div id="container_articles_competences"></div>
+
+
+            </div>
+
+
+            <!--Les outils-->
+
+            <div id="container_fond_outils">
+
+                <div id="container_titre_outils">
+                    <h2>Outils</h2>
+                </div>
+
+                <div id="container_articles_outils"></div>
+            </div>
+        </section>
+
+
+        <!--Les projets-->
+
+        <section id="projets">
+
+            <h2 id="titre_activites_projets">Mes projets</h2>
+
+            <div id="container_activites_projets"></div>
+
+        </section>
+
+    </main>
+
+
+    <!--Footer-->
+
+    <footer id="contact">
+
+        <div id="container_fond_footer">
+
+            <div id="container_regroupement_footer">
+
+                <div class="container_footer">
+                    <a href="https://github.com/MMadjid" target="_blank" alt="Lien Github"><img
+                            src="images/footer/Github.webp" alt="Logo Github"></a>
+                </div>
+
+                <div class="container_footer">
+                    <h3>MEHAL Madjid</h3>
+                    <ul>
+                        <li>
+                            <p>N'hesitez pas</p>
+                            <p>à me contacter</p>
+                        </li>
+                        <li>
+                            <a href="tel:+33642793388">06.42.79.33.88</a>
+                        </li>
+                        <li>
+                            <a href="mailto:mehal.madjidpro@gmail.com">mehal.madjidpro@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="container_footer">
+                    <a href="https://www.linkedin.com" target="_blank"
+                        alt="Lien Linkedin"><img src="images/footer/Linkedin.webp" alt="Logo Linkedin"></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
